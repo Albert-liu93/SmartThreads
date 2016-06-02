@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.albertliu.cmpe137finalbuild" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Threads"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".smartThreads"
+        >
+        <activity android:name=".Logo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LogoActivity" />
+        <activity android:name=".SignUpActivity" />
+        -
+        <activity android:name=".aboutUS" >
+            -
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        -
+        <activity android:name=".companyList" >
+            -
+            <intent-filter>
+                <action android:name="com.example.pratham.smartthreads.Main2Activity" />
+            </intent-filter>
+        </activity>
+        -
+        -
+        <activity android:name=".shipping" >
+            -
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".billing" />
+        <activity android:name=".editInfo" />
+        <activity android:name=".editbill" />
+        <activity android:name=".Size" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".confirmation" />
+        <activity android:name=".sizeChart" />
+        <activity android:name=".Tracking" />
+        <activity android:name=".howitWorks" />
+        <activity android:name=".companyItems" />
+a
+    </application>
+
+</manifest>

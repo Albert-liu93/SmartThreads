@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusableInTouchMode="true"
+    tools:context=".Size">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Input Your Clothing Sizes"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/tvSizeInput"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Shirt Size: "
+        android:id="@+id/tvShirtSize"
+        android:layout_below="@+id/tvSizeInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Pants Size: "
+        android:id="@+id/tvPantsSize"
+        android:layout_below="@+id/tvShirtSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Waist"
+        android:id="@+id/tvWaist"
+        android:layout_below="@+id/tvPantsSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWaist"
+        android:layout_below="@+id/tvPantsSize"
+        android:layout_toStartOf="@+id/sockSpinner"
+        android:layout_toLeftOf="@+id/sockSpinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Length"
+        android:id="@+id/tvLength"
+        android:layout_alignTop="@+id/tvWaist"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For women's sizes add 21 to your waist size"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/tvLength"
+        android:layout_marginTop="20px"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shirtSpinner"
+        android:layout_alignTop="@+id/tvShirtSize"
+        android:layout_toRightOf="@+id/tvPantsSize"
+        android:layout_toEndOf="@+id/tvPantsSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sock Size"
+        android:id="@+id/tvSockSize"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sockSpinner"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/shirtSpinner"
+        android:layout_alignStart="@+id/shirtSpinner" />
+
+
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etLength"
+        android:layout_alignTop="@+id/etWaist"
+        android:layout_toRightOf="@+id/tvLength" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/sockSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70px" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Shirt Size Chart"
+        android:id="@+id/shirtSizeButton"
+        android:layout_marginTop="50px"
+        android:layout_below="@id/submitButton"
+        />
+
+</RelativeLayout>
